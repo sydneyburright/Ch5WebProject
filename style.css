@@ -1,1 +1,116 @@
+header,  nav, main, footer {display: block;}
+*{box-sizing: border-box;}
+
+body{margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Verdana, sans-serif;
+}
+#container {color: #ffffff;
+            font-family: Arial, sans-serif;
+}
+header{background-color: #ffffff;
+    color: #0099CC;
+    font-family: "URW Chancery L", cursive;
+}
+nav {float: left;
+    width: 150px;
+    background color: #0099CC;
+}
+main{margin: 0 21px 0 160px;
+    padding: 1px 10px 20px 10px;
+    background-color:#ffffff;
+    color: #000000;
+}
+footer{font-size: .75em;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    font-style: italic;
+    border-top: thin solid #ffffff;
+    padding-top: 10px;
+    clear: both;
+}
+div.gallery {
+    margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;   
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.column {
+    float: left;
+    width: 20%;
+}
+.row:after {
+    content: ""
+    display: flex;
+    clear: both;
+    
+}
+ul {
+    list-style-type: none;
+}
+h1 {margin-top: 0;
+    font-size: ;
+    text-align: left;
+}
+h2 {margin-bottom: 0;
+    font-size: 0.83em;
+    text-align: left;
+}
+nav ul {margin-top: 20px;
+        list-style-type: none;
+}
+nav a {text-decoration: none;
+    font-size: 1.2em;
+}
+nav a:link{color: #000000;}
+nav a:visited{color: #000000;}
+nav a:focus, nav a:hover{color: #0099CC;}
+nav a:active{color: #000000;}
+
+main p {margin: 20px;
+        font-size: 1em
+}
+main h2{color: #000000;
+        background-color: #ffffff;
+        font-size: 2em;
+}
+.floatleft {margin: 10px;
+        float: left;
+}
+
+@media only screen and (max-width: 1024px){
+    main {margin: 0px;}
+    body {margin: 0px;}
+    #container {min-width: auto;}
+    nav {float: none; width: auto;}
+    nav li {display: inline-block; padding: 0.5em;}
+    nav ul {text-align: center;}
+    h1, h2 {font-size: 120%;}
+    p {font-size: 90%;}
+    .column {float: left; width: 40%;}
+    .row:after {content: ""; display: table; clear: both;}
+}
+
+@media only screen and (max-width: 768px){
+    #container {min-width: auto;}
+    nav li {display: inline-block; padding: 0.5em;}
+    nav ul {text-align: center;}
+    h1, h2 {font-size: 100%;}
+    p {font-size: 80%;}
+    .column {float: left;
+    width: 40%;}
+    .row:after {content: ""; display: table; clear: both;}
+}
+
+
 
